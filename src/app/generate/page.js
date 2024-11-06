@@ -34,7 +34,7 @@ const GenerateComponent = () => {
       redirect: "follow",
     };
 
-    const response = await fetch("http://localhost:3000/api/add", requestOptions);
+    const response = await fetch("https://bittree-share-social-sites.vercel.app/api/add", requestOptions);
     const result = await response.json();
 
     if (result.success) {
